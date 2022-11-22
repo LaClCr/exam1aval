@@ -3,3 +3,4 @@
 6 -f) cat alumnos.txt | awk '{print $1, $2, $5}' | sed 's/ /:/' | sed 's/ /-/g' | sed 's/:/ /' | tail -n+2
 7 - g) cat alumnos.txt | grep -c González
 8 - j) sed -i 's/Vicente/Pepe/g' alumnos.txt 
+9 - k) cat alumnos.txt | tail -n+2 | awk '{ if ($4 >= 2010 && $4 <= 2019) {print}}'
